@@ -14,6 +14,38 @@
     --footer-color: black;
     --search-logo-left: 750px;
 }
+/* DEMO mate loading nakhi chhe baki change karo game evi */
+/* ama height-width ne change na karvu baki background ne badhu set kari sakay*/
+#loading{
+    height:100vh;
+    width:100vw;
+    background-color: rgb(153, 140, 140);
+    position:fixed;
+    top:0; left:0;
+    z-index:2;  /* Header na batavvu hoy loading samaye to 2 karido*/
+    opacity: 0.8; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* load_effect: to add load effect, change as per your convenience*/
+#load_effect{
+    opacity:1;
+    height:55px;
+    width:55px;
+    background-color: transparent;
+    border:10px solid salmon;
+    border-bottom:7px solid transparent;
+    border-top:7px solid transparent;
+    border-radius:50%;
+    animation: load 1.4s linear infinite;
+}
+
+@keyframes load{
+    0%{ transform: rotate(0deg);}
+    100%{ transform: rotate(360deg);}
+}
 
 nav {
     height: 8vh;
