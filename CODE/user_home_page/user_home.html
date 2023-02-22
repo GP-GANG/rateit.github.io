@@ -12,6 +12,15 @@
 </head>
 
 <body>
+
+    <div id="loading_div">
+        <div id="loading">
+        <div id="load_effect">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    </div>
     <header>
         <nav>
             <img class="main_logo" src="https://github.com/GP-GANG/rateit.github.io/blob/main/Other%20Files/photos/logo.png?raw=true" alt="RATE-IT.COM">
@@ -554,6 +563,17 @@
         })
 
     </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#loading").animate({
+            "opacity":"0"
+        },2000,function(){
+            $("#loading").css({"display":"none"});
+        });
+    });
+</script>
 </body>
 
 </html>
