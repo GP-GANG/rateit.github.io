@@ -19,11 +19,11 @@
 #loading{
     height:100vh;
     width:100vw;
-    background-color: rgb(153, 140, 140);
+    background-color: transparent;
     position:fixed;
     top:0; left:0;
     z-index:2;  /* Header na batavvu hoy loading samaye to 2 karido*/
-    opacity: 0.8; 
+/*     opacity: 0.8;  */
     display: flex;
     justify-content: center;
     align-items: center;
