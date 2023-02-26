@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Ranking | rateit.com</title>
+    <link rel="stylesheet" href="rank_status.css">
+    <script src="https://kit.fontawesome.com/c2a4c35825.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20a4a662a5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+        <nav>
+            <table>
+                <tr height="50px"><td><a href="#" class="header-content">All Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">Health Economics Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">Technology Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">Online Food Ordering Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">Transportation service Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">E-commerce Store Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">Automobile Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">Social-Media Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">Banking Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">Financial Technology Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">Jewellery Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">Beverage Companies</a></td></tr>
+                <tr height="50px"><td><a href="#" class="header-content">Cement Manufacturer Companies</a></td></tr>
+            </table>
+        </nav>
+
+<section id="Polls">
+    <div class="First-Poll" id="f-poll">
+        <div class="logoContainer">
+            <img src="https://github.com/GP-GANG/rateit.github.io/blob/main/Other%20Files/photos/TCS.png?raw=true"
+             id="l1" style="height: 50px; width: 55px;">
+        </div>
+        <div class="text-section">
+        <p><b>Tata consultancy Service</b></p><br>
+        <p class="details">Technology Company</p>
+        <div class="details">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <p class="details">Total Review : 1,32,743</p>
+    </div>
+    <div class="description">
+        <b>About :</b>
+        <p>Tata Consultancy Services is an IT services, consulting, and business solutions organization that has been partnering with many of the world's largest businesses in their transformation journeys for over 50 years.</p>
+    </div>
+</div>
+</section>
+
+<script>
+    $(document).ready(function(){
+        $("tr:first").css("backgroundColor","rgb(237, 75, 75)");
+            $("nav table tr:first").css("color","white");
+
+        $("tr").click(function(e){
+            $("tr").css("backgroundColor","white");
+            $("tr").css("color","black");
+
+            $(e.target).parent().parent().css("color","white");
+            $(e.target).parent().parent().css("backgroundColor","rgb(237, 75, 75)");
+        });
+    });
+</script>
+
+</body>
+</html>
