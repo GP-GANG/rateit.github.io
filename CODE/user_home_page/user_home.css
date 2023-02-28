@@ -14,36 +14,27 @@
     --footer-color: black;
     --search-logo-left: 750px;
 }
-/* DEMO mate loading nakhi chhe baki change karo game evi */
-/* ama height-width ne change na karvu baki background ne badhu set kari sakay*/
-#loading{
-    height:100vh;
-    width:100vw;
-    position:fixed;
-    background-color: darkgray;
-    top:0; left:0;
-    z-index:1;  /* Header na batavvu hoy loading samaye to 2 karido*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-/* load_effect: to add load effect, change as per your convenience*/
-#load_effect{
-    height:50px;
-    width:50px;
-    background-color: transparent;
-    border:5px solid black;
-    border-bottom:7px solid transparent;
-    border-top:7px solid transparent;
-    border-radius:50%;
-    animation: load 1.3s linear infinite;
-}
+#preloader{
+        height: 100%;
+        width:100%;
+        position:fixed;
+        top:0; left:0;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(177, 179, 179, 0.548);
+        align-items: center;
+        opacity: 1;
+        z-index: 5;
+    
+.load{ 
+        height: 70px;
+        width: 70px;
+    }
 
-@keyframes load{
-    0%{ transform: rotate(0deg);}
-    100%{ transform: rotate(360deg);}
-}
+.load img{
+        height: 70px;
+    }
 
 nav {
     height: 8vh;
