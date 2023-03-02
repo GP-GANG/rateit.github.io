@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conpany Profile | rateit.com</title>
+    <script src="multiselect-dropdown.js"></script>
+    <link rel="stylesheet" href="comp_profile.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="profile_container">
+            <div class="block">
+                <div class="imag">
+                    <img
+                        src="https://github.com/GP-GANG/rateit.github.io/blob/main/Other%20Files/photos/TCS.png?raw=true">
+                </div>
+                <table rules="rows">
+                    <tr>
+                        <td class="t1">Company Name :</td>
+                        <td class="t2"><input type="text" class="profile_input" value="TATA Consaltancy Service"
+                                disabled> </td>
+                    </tr>
+                    <tr>
+                        <td class="t1">Company ID :</td>
+                        <td class="t2"><input type="text" class="profile_input" value="9726098765" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="t1">Email ID :</td>
+                        <td class="t2"><input type="text" class="profile_input" value="tataconsaltancyservice@gmail.com"
+                                disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="t1">Category :</td>
+                        <td class="t2"><input type="text" class="profile_input" value="Service Based" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="t1">Joining Date :</td>
+                        <td class="t2"><input type="text" class="profile_input" value="10/10/2010" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="t1">Polls Registered :</td>
+                        <td class="t2"><input type="text" class="profile_input" value="5" disabled></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="selector">
+                <div>
+                <form>
+                    <label>Select Your services :</label><br>
+                    <select name="Services" id="services" multiple>
+                        <option value="Timing">Timing</option>
+                        <option value="Product">Product</option>
+                        <option value="Payment">Payment</option>
+                        <option value="Employ">Emploies</option>
+                        <option value="Packing">Packing</option>
+                    </select>
+                </form>
+            </div>
+                <br><br><br>
+
+                <input id="add-text" type="text" placeholder="+ADD NEW SERVICE . . .">
+                <button>+ADD</button>
+            </div>
+        </div>
+        <div id="btn-box">
+            <a href="#"><button class="profile_btn" onclick="editProfile()" id="profile_edit_btn">Edit
+                    Profile</button></a>
+            <button class="profile_btn" onclick="saveProfile()" id="profile_save_btn"> Save Profile </button>
+            <button class="profile_btn" onclick="closeProfile()" id="profile_close_btn"> Close </button>
+        </div>
+    </body>
+
+</html>
